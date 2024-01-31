@@ -1,0 +1,146 @@
+// Font Sizes
+.fs6 {
+    font-size: rem(6px);
+}
+
+.fs8 {
+    font-size: rem(8px);
+}
+
+.fs10 {
+    font-size: rem(10px);
+}
+
+.fs12 {
+    font-size: rem(12px);
+}
+
+.fs14 {
+    font-size: rem(14px);
+}
+
+.fs16 {
+    font-size: rem(16px);
+}
+
+.fs18 {
+    font-size: rem(18px);
+}
+
+.fs20 {
+    font-size: rem(20px);
+}
+
+.fs22 {
+    font-size: rem(22px);
+}
+
+.fs24 {
+    font-size: rem(24px);
+}
+
+.fs26 {
+    font-size: rem(26px);
+}
+
+.fs28 {
+    font-size: rem(28px);
+}
+
+.fs30 {
+    font-size: rem(30px);
+}
+
+.fs32 {
+    font-size: rem(32px);
+}
+
+// Flex Helpers
+.flex {
+    display: flex;
+
+    >*.full {
+        flex: 1;
+    }
+
+    &.row {
+        flex-direction: row;
+    }
+
+    &.column {
+        flex-direction: column;
+    }
+
+    &.justify-center {
+        justify-content: center;
+    }
+
+    &.justify-between {
+        justify-content: space-between;
+    }
+
+    &.justify-around {
+        justify-content: space-around;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.lighter {
+    font-weight: lighter;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// .divider {
+//     border-top: 1px solid #ccc;
+// }
+
+.graytxt {
+    color: #717171;
+}
+
+.blacktxt {
+    color: #222222;
+}
+
+// Media Helpers
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+
+.no-drop {
+    cursor: no-drop;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.hovunderline:hover {
+    text-decoration: underline;
+}
