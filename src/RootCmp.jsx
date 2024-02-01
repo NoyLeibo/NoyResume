@@ -6,6 +6,7 @@ import { AboutPage } from "./cmps/AboutPage";
 export function RootCmp() {
     const [currentPage, setCurrentPage] = useState("welcome");
 
+
     return (
         <main className="main-container">
             <WelcomePage />
