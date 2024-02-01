@@ -10,15 +10,10 @@
 @import "basics/base";
 @import "basics/links";
 
-// pages
-// @import "views/AboutUs";
-// @import "views/HomePage";
-// @import "views/StayIndex";
-
 // Components
 @import "cmps/WelcomePage.scss";
 @import "cmps/AboutPage.scss";
-// @import "cmps/AppHeaderFilter";
+@import "cmps/AppHeader.scss";
 // @import "cmps/Calendar";
 // @import "cmps/Destination";
 // @import "cmps/Guest";

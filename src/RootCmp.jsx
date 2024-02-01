@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { WelcomePage } from "./cmps/WelcomePage";
+import { AppHeader } from "./cmps/AppHeader.jsx";
 import { AboutPage } from "./cmps/AboutPage";
 
 export function RootCmp() {
@@ -9,8 +10,9 @@ export function RootCmp() {
 
     return (
         <main className="main-container">
+            <AppHeader />
             <WelcomePage />
-            <AboutPage />
+            {/* <AboutPage /> */}
             {/* {currentPage === "welcome" && <WelcomePage />} */}
             {/* {currentPage === "about" && <AboutPage />} */}
         </main>

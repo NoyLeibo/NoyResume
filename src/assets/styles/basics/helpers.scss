@@ -49,10 +49,19 @@
 
 .fs30 {
     font-size: rem(30px);
+
 }
 
 .fs32 {
     font-size: rem(32px);
+}
+
+.fs60 {
+    font-size: rem(60px);
+
+    @include for-mobile-layout {
+        font-size: 40px; // Smaller font size for mobile
+    }
 }
 
 // Flex Helpers
@@ -110,6 +119,14 @@
 
 .blacktxt {
     color: #222222;
+}
+
+.greentxt {
+    color: $clGreenTxt;
+}
+
+.whitetxt {
+    color: white;
 }
 
 // Media Helpers

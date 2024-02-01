@@ -1,6 +1,59 @@
 .welcome-page {
-    background-color: aqua;
+    background-image: url('../../../public/img/home-background.png');
+    background-size: cover;
+    background-position: center;
+    opacity: .85;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
+    justify-content: space-around;
+
+    @include for-mobile-layout {
+        min-height: 100vh;
+        font-size: .75rem;
+    }
+
+    .avatar {
+        margin: 0;
+        width: rem(150px);
+        height: rem(150px);
+        border-radius: 50%;
+        object-fit: cover;
+
+        @include for-mobile-layout {
+            width: rem(100px);
+            height: rem(100px);
+        }
+    }
+
+    .hireme-btn {
+        width: rem(150px);
+        height: rem(70px);
+        border-radius: 10px;
+        background-color: $clGreenTxt;
+
+        &:hover {
+            background-color: transparent;
+            color: $clGreenTxt;
+            border: 3px solid $clGreenTxt;
+            cursor: pointer;
+
+            @include hover-supported {
+                background-color: transparent;
+                color: $clGreenTxt;
+                border: 3px solid $clGreenTxt;
+                cursor: pointer;
+            }
+        }
+
+        @include for-mobile-layout {
+            width: rem(120px);
+            height: rem(50px);
+        }
+    }
+
+    @include for-mobile-layout {
+        height: auto;
+        padding: 20px;
+    }
 }

@@ -1,9 +1,23 @@
+import { TypeAnimation } from 'react-type-animation';
+
+
 export function WelcomePage() {
     return (
-        <div className="welcome-page">
-            <h1>hey</h1>
-            <h2>hey</h2>
-            <h3>hey</h3>
-        </div>
+        <section className="welcome-page whitetxt flex align-center">
+            <div>
+                <div className="fs30">Hello, my name is</div>
+                <div className="fs60 bold underline">Noy Leibovich</div>
+                <div>
+                    <TypeAnimation
+                        sequence={["And I'm a Programmer", 1000, "And I'm a Developer", 1000]}
+                        speed={50}
+                        style={{ fontSize: '2em' }}
+                        repeat={Infinity}
+                    />
+                </div>
+                <button className="hireme-btn fs24">Hire me</button>
+            </div>
+            <img src="https://res.cloudinary.com/dysh9q6ir/image/upload/v1706788350/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_ngeib7.png" className="avatar" />
+        </section>
     )
 }

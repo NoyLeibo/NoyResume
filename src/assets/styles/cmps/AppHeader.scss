@@ -1,0 +1,44 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 1;
+    padding-top: 30px;
+
+    &> :nth-child(1) {
+        font-size: rem(30px);
+        color: white;
+    }
+
+    &> :nth-child(2) {
+        font-size: rem(23px);
+        color: white;
+
+        &>* {
+            padding-right: 10px;
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+    }
+
+    .hamburger-react {
+        display: none;
+    }
+
+    @include for-below-narrow-layout {
+        &> :nth-child(2) {
+            display: none;
+        }
+
+        .hamburger-react {
+            display: block;
+        }
+    }
+
+}
