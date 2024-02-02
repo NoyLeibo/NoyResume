@@ -20,7 +20,7 @@ export function AppHeader() {
                 <NavLink>Projects</NavLink>
                 <NavLink>Contact me</NavLink>
             </div>
-            <Hamburger toggled={isOpen} toggle={setOpen} color={isOpen ? "black" : '#4FD1C5'} />
+            <Hamburger toggled={isOpen} toggle={setOpen} color={isOpen ? "black" : '#08ff98fb'} />
             {/* {isOpen ? } */}
         </header>
     )

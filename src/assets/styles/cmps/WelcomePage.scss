@@ -13,6 +13,17 @@
         font-size: .75rem;
     }
 
+    .typeanimation-home {
+        font-size: 2em;
+        padding-bottom: 20px;
+
+        &>* {
+            color: $clGreenTxt;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+
     .avatar {
         margin: 0;
         width: rem(150px);

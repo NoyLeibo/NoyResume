@@ -7,11 +7,11 @@ export function WelcomePage() {
             <div>
                 <div className="fs30">Hello, my name is</div>
                 <div className="fs60 bold underline">Noy Leibovich</div>
-                <div>
+                <div className="typeanimation-home">
+                    And I'm a {' '}
                     <TypeAnimation
-                        sequence={["And I'm a Programmer", 1000, "And I'm a Developer", 1000]}
+                        sequence={["Programmer", 1000, "Developer", 1000]}
                         speed={50}
-                        style={{ fontSize: '2em' }}
                         repeat={Infinity}
                     />
                 </div>
