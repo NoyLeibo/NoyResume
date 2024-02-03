@@ -32,8 +32,8 @@ export function AboutPage() {
                         speed={50}
                         repeat={Infinity}
                     /></p>
-                <p>with proficiency in modern web technologies including JavaScript, React, Vue, Angular, Node.js, and Python. My coding journey is marked by a continuous quest for learning and applying the latest technologies to solve real-world problems.</p>
-                <a className='downloadcv bold fs16' href="./public/files/NoyLeibovichResume.pdf" download="NoyLeibovichResume">DOWNLOAD</a>
+                <p>with proficiency in modern web technologies including JavaScript, React, Vue, Angular, Node.js, and Python. My coding journey is marked by a continuous learning process and applying technology to solve real-world problems.</p>
+                <a className='downloadcv bold fs16' href="./public/files/NoyLeibovichResume.pdf" download="NoyLeibovichResume">My Reseume</a>
                 {/* <button onClick={downloadFile} className='downloadcv bold fs16'>Download CV</button> */}
             </div>
         </section >
