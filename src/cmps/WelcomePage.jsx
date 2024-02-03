@@ -1,6 +1,5 @@
 import { TypeAnimation } from 'react-type-animation';
 
-
 export function WelcomePage() {
     return (
         <section className="welcome-page whitetxt flex align-center">
