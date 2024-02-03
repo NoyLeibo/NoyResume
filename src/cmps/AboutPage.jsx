@@ -28,7 +28,7 @@ export function AboutPage() {
                 <p>I am Noy Leibovich, a full-stack {" "}
                     <TypeAnimation
                         className='underline'
-                        sequence={["porogrammer.", 2000, "developer.", 2000]}
+                        sequence={["programmer.", 2000, "developer.", 2000]}
                         speed={50}
                         repeat={Infinity}
                     /></p>
