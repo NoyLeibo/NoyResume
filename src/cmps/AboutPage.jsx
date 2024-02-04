@@ -17,8 +17,7 @@ export function AboutPage() {
                     <MovingComponent
                         className='fs32 underline bold'
                         type="effect3D"
-                        duration="1000ms"
-                        delay="index * 100ms"
+                        duration="2000ms"
                         direction="normal"
                         timing="ease"
                         iteration="infinite"
@@ -33,7 +32,7 @@ export function AboutPage() {
                         repeat={Infinity}
                     /></p>
                 <p>with proficiency in modern web technologies including JavaScript, React, Vue, Angular, Node.js, and Python. My coding journey is marked by a continuous learning process and applying technology to solve real-world problems.</p>
-                <a className='downloadcv bold fs16' href="././public/files/NoyLeibovichResume.pdf" download="NoyLeibovichReseume">My Reseume</a>
+                <a className='downloadcv bold fs16' href="public/files/NoyLeibovichResume.pdf" download="NoyLeibovichReseume.pdf">My Reseume</a>
                 {/* <button onClick={downloadFile} className='downloadcv bold fs16'>Download CV</button> */}
             </div>
         </section >
