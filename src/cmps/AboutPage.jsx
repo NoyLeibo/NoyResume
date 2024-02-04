@@ -24,13 +24,22 @@ export function AboutPage() {
                         fillMode="none">
                         {letter}
                     </MovingComponent>)}
-                <p>I am Noy Leibovich, a full-stack {" "}
-                    <TypeAnimation
-                        className='underline'
-                        sequence={["programmer.", 2000, "developer.", 2000]}
-                        speed={50}
-                        repeat={Infinity}
-                    /></p>
+                <p>I am Noy Leibovich,
+                    <span className='about-me-web'>a full-stack {" "}
+                        <TypeAnimation
+                            className='underline'
+                            sequence={["programmer,", 2000, "developer,", 2000]}
+                            speed={50}
+                            repeat={Infinity}
+                        />
+                    </span>
+                </p>
+                <p className='about-me-mobile hidden'>a full-stack {" "}<TypeAnimation
+                    className='underline'
+                    sequence={["programmer,", 2000, "developer,", 2000]}
+                    speed={50}
+                    repeat={Infinity}
+                /></p>
                 <p>with proficiency in modern web technologies including JavaScript, React, Vue, Angular, Node.js, and Python. My coding journey is marked by a continuous learning process and applying technology to solve real-world problems.</p>
                 <a className='downloadcv bold fs16' href="public/files/NoyLeibovichResume.pdf" download="NoyLeibovichReseume.pdf">My Reseume</a>
                 {/* <button onClick={downloadFile} className='downloadcv bold fs16'>Download CV</button> */}

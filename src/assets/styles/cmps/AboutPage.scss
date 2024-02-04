@@ -36,10 +36,35 @@
             border-radius: 7px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            width: 20%;
 
             &:hover {
                 background-color: $button-hover-color;
                 color: white; // Change text color on hover for contrast
+            }
+        }
+    }
+}
+
+@include for-mobile-layout {
+    .about-page {
+        .about-details {
+            max-width: 87%;
+
+            p {
+                margin: 0;
+
+                .about-me-web {
+                    display: none;
+                }
+            }
+
+            .about-me-mobile {
+                display: block;
+            }
+
+            .downloadcv {
+                width: 40%;
             }
         }
     }
