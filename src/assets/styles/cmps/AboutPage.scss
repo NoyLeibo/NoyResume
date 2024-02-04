@@ -30,17 +30,20 @@
 
         .downloadcv {
             margin-top: 20px;
-            padding: 10px 15px; // Adjusted padding for better touch
-            background-color: $primary-color;
-            border: none; // Remove border
+            padding: 10px 15px;
+            background-color: lighten($clGreenTxt, 10%);
+            // background-color: $clGreenTxt;
+            border: none;
             border-radius: 7px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color .3s ease;
             width: 20%;
+            color: black;
+            text-align: center;
+            border: 1px solid black;
 
             &:hover {
-                background-color: $button-hover-color;
-                color: white; // Change text color on hover for contrast
+                background-color: darken($clGreenTxt, 10%);
             }
         }
     }
