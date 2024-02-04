@@ -1,37 +1,32 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 import { useEffect, useState } from "react";
+import { HeaderWithoutSticky } from "./HeaderWithoutSticky";
+import { HeaderWithSticky } from "./HeaderWithSticky";
+// import { useLockBodyScroll } from "@uidotdev/usehooks";
 
 
-export function AppHeader() {
+export function AppHeader({ isScrolledDown }) {
     const navigate = useNavigate(); // should navigate the li buttons. IN FUTURE
-    const [isOpen, setOpen] = useState(false)
+    const [isOpenMobileNav, setIsOpenMobileNav] = useState(false)
 
     useEffect(() => {
-        console.log(isOpen);
-    }, [isOpen]);
+        const lockBodyScroll = () => {
+            document.body.style.overflow = 'hidden';
+        };
+        const unlockBodyScroll = () => {
+            document.body.style.overflow = '';
+        };
+
+        if (isOpenMobileNav) return (lockBodyScroll())
+        return (unlockBodyScroll())
+    }, [isOpenMobileNav]);
 
     return (
-        <header className="flex">
-            <div className="bold">NOY<span className="greentxt">LEIBOVICH</span></div>
-            <ul className="flex row">
-                <li>Home</li>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact me</li>
-            </ul>
-            <Hamburger toggled={isOpen} toggle={setOpen} color={isOpen ? "white" : '#08ff98fb'} />
-            {isOpen ?
-                <div className="hamburger-menu">
-                    <ul className="flex column justify-center align-center ">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact me</li>
-                    </ul>
-                </div> : ''}
-        </header>
+        isScrolledDown ? (
+            <HeaderWithSticky isOpenMobileNav={isOpenMobileNav} setIsOpenMobileNav={setIsOpenMobileNav} />
+        ) : (
+            <HeaderWithoutSticky isOpenMobileNav={isOpenMobileNav} setIsOpenMobileNav={setIsOpenMobileNav} />
+        )
     )
 }

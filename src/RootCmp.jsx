@@ -10,7 +10,7 @@ export function RootCmp() {
 
     useEffect(() => {
         const handleScroll = () => {
-            console.log(window.scrollY)
+            setIsScrolledDown(window.scrollY > 0)
         }
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)
@@ -18,7 +18,7 @@ export function RootCmp() {
 
     return (
         <main className="main-container">
-            <AppHeader />
+            <AppHeader isScrolledDown={isScrolledDown} />
             <WelcomePage />
             <AboutPage />
             {/* {currentPage === "welcome" && <WelcomePage />} */}
