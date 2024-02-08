@@ -13,8 +13,9 @@ export function AboutPage() {
     return (
         <section className="about-page flex row align-center">
             <div className='fs22 about-details flex column'>
-                {Letters.map((letter) =>
+                {Letters.map((letter, index) =>
                     <MovingComponent
+                        key={index}
                         className='fs32 underline bold'
                         type="effect3D"
                         duration="2000ms"

@@ -23,7 +23,7 @@ export function RootCmp() {
             <AppHeader isScrolledDown={isScrolledDown} />
             <WelcomePage />
             <AboutPage />
-            {/* <SkillsPage /> */}
+            <SkillsPage />
             {/* {currentPage === "welcome" && <WelcomePage />} */}
             {/* {currentPage === "about" && <AboutPage />} */}
         </main>
