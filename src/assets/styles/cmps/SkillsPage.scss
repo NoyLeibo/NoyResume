@@ -18,25 +18,25 @@
         .skill-bar {
             display: flex;
             align-items: center;
-            background-color: #333;
+            background-color: #7d7d7d;
             border-radius: 8px;
             margin: 10px;
             overflow: hidden;
-            cursor: pointer; // Indicate it's clickable
+            cursor: pointer;
             transition: box-shadow 0.3s ease-in-out;
 
             &:hover {
-                box-shadow: 0 0 15px #dfc5c5; // Subtle glow effect on hover
+                box-shadow: 0 0 30px #fff;
             }
 
             .skill-icon {
-                width: 50px; // Adjust size as needed
-                height: 50px; // Adjust size as needed
-                margin-right: 10px; // Space between icon and progress bar
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
             }
 
             .skill-info {
-                width: 100%; // Ensure the text and progress bar take up the remaining space
+                width: 100%;
 
                 .skill-name {
                     padding: 10px 0;
@@ -44,7 +44,7 @@
                 }
 
                 .skill-progress {
-                    background-color: #dfc5c5;
+                    background-color: $clGreenTxt;
                     border-radius: 50px;
                     height: 20px;
                     width: 0;
@@ -61,11 +61,11 @@
     }
 
     50% {
-        width: 100%; // Expand to full width
+        width: 100%;
     }
 
     100% {
-        width: 0; // Contract back to starting width
+        width: 0;
     }
 }
 
@@ -77,6 +77,13 @@
 
         .skills-page {
             width: rem(380px);
+
+            .skill-bar {
+
+                &:hover {
+                    box-shadow: 0 15px 30px #fff, 0 10px 10px #fff;
+                }
+            }
         }
     }
 }
