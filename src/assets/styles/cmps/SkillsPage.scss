@@ -8,8 +8,12 @@
     align-items: center;
     flex-direction: column;
 
+    .my-skills-logo {
+        width: rem(600px);
+    }
+
     .skills-page {
-        width: 40%;
+        width: rem(600px);
 
         .skill-bar {
             display: flex;
@@ -66,8 +70,14 @@
 }
 
 @include for-mobile-layout {
-    .test .skills-page {
-        width: 90%;
+    .test {
+        .my-skills-logo {
+            width: rem(380px);
+        }
+
+        .skills-page {
+            width: rem(380px);
+        }
     }
 }
 
