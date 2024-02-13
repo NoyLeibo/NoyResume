@@ -64,3 +64,34 @@
         }
     }
 }
+
+@mixin on-circle($item-count, $circle-size, $item-size) {
+    // position: relative;
+    width: $circle-size;
+    height: $circle-size;
+    padding: 0;
+    // border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // overflow: hidden;
+
+    >* {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: $item-size;
+        height: $item-size;
+        margin: -($item-size / 2);
+        $angle: 360deg / $item-count;
+
+        @for $i from 1 through $item-count {
+            $rot: $angle * ($i - 1);
+
+            &:nth-of-type(#{$i}) {
+                transform: rotate($rot) translate(0.5 * $circle-size - 0.5*$item-size) rotate(-$rot);
+            }
+        }
+    }
+}
