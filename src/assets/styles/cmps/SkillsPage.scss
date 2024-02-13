@@ -43,11 +43,8 @@
                     background-color: #dfc5c5;
                     border-radius: 50px;
                     height: 20px;
-                    width: 0; // Start width at 0 for the animation
-                    transition: width 2s ease-out;
-
-                    // Adding animation
-                    animation: fillBar 2s ease-out forwards;
+                    width: 0;
+                    animation: fillBar 4s ease-out forwards infinite;
                 }
             }
         }
@@ -55,12 +52,16 @@
 }
 
 @keyframes fillBar {
-    from {
+    0% {
         width: 0;
     }
 
-    to {
-        width: 100%; // This will be overridden inline to match the skill level
+    50% {
+        width: 100%; // Expand to full width
+    }
+
+    100% {
+        width: 0; // Contract back to starting width
     }
 }
 
