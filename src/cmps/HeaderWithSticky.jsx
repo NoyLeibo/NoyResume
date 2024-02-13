@@ -10,7 +10,10 @@ export function HeaderWithSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                 break;
             case 'About':
                 window.scrollTo({ top: 559, behavior: 'smooth' })
-
+                break;
+            case 'Skills':
+                window.scrollTo({ top: 1200, behavior: 'smooth' })
+                break;
             default:
                 break;
         }
@@ -22,7 +25,7 @@ export function HeaderWithSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
             <ul className="flex row">
                 <li onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }) }}>Home</li>
                 <li onClick={() => { window.scrollTo({ top: 607, behavior: 'smooth' }) }}>About</li>
-                <li>Skills</li>
+                <li onClick={() => { window.scrollTo({ top: 1300, behavior: 'smooth' }) }}>Skills</li>
                 <li>Projects</li>
                 <li>Contact me</li>
             </ul>
@@ -32,7 +35,7 @@ export function HeaderWithSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                     <ul className="flex column justify-center align-center">
                         <li onClick={() => onNavigateMobile('Home')}>Home</li>
                         <li onClick={() => onNavigateMobile('About')}>About</li>
-                        <li>Skills</li>
+                        <li onClick={() => onNavigateMobile('Skills')}>Skills</li>
                         <li>Projects</li>
                         <li>Contact me</li>
                     </ul>

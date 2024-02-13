@@ -10,6 +10,7 @@ export function SkillsOnWeb() {
 
     return (
         <section className='test'>
+            <h2 className="underline">My-Skills</h2>
             <section className="skills-page">
                 {skills.map((skill, index) => (
                     <div key={index} className="skill-bar">
