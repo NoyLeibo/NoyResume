@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { ChartOne } from './ChartOne';
 import { ChartTwo } from './ChartTwo';
+import angularIcon from '../../public/img/angular-icon.png';
+import nodeIcon from '../../public/img/node-icon.png';
 
 export function SkillsOnWeb() {
     const [clicked, setClicked] = useState(null);
@@ -15,7 +17,7 @@ export function SkillsOnWeb() {
     return (
         <section className='test'>
             <section className="skills-page">
-                {['angular-icon.png', 'node-icon.png', 'React-icon.png', 'vue-icon.png', 'html5-css3-icon.png', 'js-icon.png'].map((icon, index) => (
+                {[angularIcon, nodeIcon, 'React-icon.png', 'vue-icon.png', 'html5-css3-icon.png', 'js-icon.png'].map((icon, index) => (
                     <img
                         key={icon}
                         src={`../public/img/${icon}`}
