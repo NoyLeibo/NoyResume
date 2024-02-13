@@ -65,6 +65,12 @@
     }
 }
 
+@include for-mobile-layout {
+    .test .skills-page {
+        width: 90%;
+    }
+}
+
 
 // .skills-page {
 //     @include on-circle($item-count: 6, $circle-size: 30em, $item-size: 6em);
