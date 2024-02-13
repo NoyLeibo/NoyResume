@@ -18,7 +18,7 @@ export function SkillsOnWeb() {
                 {['angular-icon.png', 'node-icon.png', 'React-icon.png', 'vue-icon.png', 'html5-css3-icon.png', 'js-icon.png'].map((icon, index) => (
                     <img
                         key={icon}
-                        src={`./public/img/${icon}`}
+                        src={`/public/img/${icon}`}
                         className={`${clicked === index ? 'clicked' : ''}`}
                         onClick={() => handleClick(index)}
                     />
