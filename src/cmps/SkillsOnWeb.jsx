@@ -16,7 +16,7 @@ export function SkillsOnWeb() {
                     <div key={index} className="skill-bar">
                         <img src={skill.icon} alt={`${skill.name} icon`} className="skill-icon" />
                         <div className="skill-info">
-                            <div className="skill-name">{skill.name}</div>
+                            <div className="skill-name underline">{skill.name}</div>
                             <div className="skill-progress" style={{ width: `$100%` }}>{skill.name}</div>
                         </div>
                     </div>
