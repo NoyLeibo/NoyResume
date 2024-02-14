@@ -11,7 +11,7 @@ export function SkillsPageTwo() {
                 </div>
                 <div className="card-two flex column align-center">
                     <img src="/img/back-end-developer.png" />
-                    Text
+                    JavaScript | Python | Rest-API
                 </div>
                 <div className="card-three flex column align-center">
                     <img src="/img/Data.png" />
