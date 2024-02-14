@@ -72,23 +72,30 @@
 }
 
 @include for-mobile-layout {
-    .test {
+    .skills-page {
         .my-skills-logo {
             width: rem(380px);
         }
 
-        .skills-page {
+        .skills {
             width: rem(380px);
 
             .skill-bar {
+                width: rem(380px);
 
                 &:hover {
                     box-shadow: 0 15px 30px #fff, 0 10px 10px #fff;
                 }
+
             }
         }
     }
 }
+
+
+
+
+
 
 
 // .skills-page {

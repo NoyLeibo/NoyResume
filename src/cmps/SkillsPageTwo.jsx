@@ -1,21 +1,21 @@
 export function SkillsPageTwo() {
     return (
-        <section className="skills-page-two">
+        <section className="skills-page-two divider">
             <div className="flex justify-center" >
                 <img src="/img/My-Tech-Logo.png" />
             </div>
-            <section className="skills-cards flex align-center">
+            <section className="skills-cards flex align-center divider">
                 <div className="card-one flex column align-center">
                     <img src="/img/front-end-developer.png" />
-                    JavaScript | HTML | CSS | React | Vue | Angular
+                    JavaScript | HTML | CSS | React | Vue | Angular | JQuery
                 </div>
                 <div className="card-two flex column align-center">
                     <img src="/img/back-end-developer.png" />
-                    JavaScript | Python | Rest-API
+                    JavaScript | Python | API | Sockets
                 </div>
                 <div className="card-three flex column align-center">
                     <img src="/img/Data.png" />
-                    MongoDB | JSON
+                    MongoDB | JSON | Git
                 </div>
             </section>
         </section>

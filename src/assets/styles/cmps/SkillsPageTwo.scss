@@ -11,50 +11,27 @@
     }
 
     .skills-cards {
-        justify-content: space-evenly;
 
+        justify-content: space-around;
 
-        .card-one {
-            width: rem(400px);
-            height: rem(400px);
-            background-color: SlateGrey;
-            padding: 32px;
-            border-radius: 20px;
-            justify-content: space-between;
-
-            img {
-                width: 200px;
-                height: 200px;
-                margin-right: 10px;
-                object-fit: cover;
-                border-radius: 50%;
-            }
-        }
-
-        .card-two {
-            width: rem(400px);
-            height: rem(400px);
-            background-color: SlateGrey;
-            padding: 32px;
-            border-radius: 20px;
-            justify-content: space-between;
-
-            img {
-                width: 200px;
-                height: 200px;
-                margin-right: 10px;
-                object-fit: cover;
-                border-radius: 50%;
-            }
-        }
-
+        .card-one,
+        .card-two,
         .card-three {
+            margin-top: rem(30px);
             width: rem(400px);
             height: rem(400px);
             background-color: SlateGrey;
             padding: 32px;
             border-radius: 20px;
             justify-content: space-between;
+
+            &:hover,
+            :hover {
+                box-shadow: inset 0 -3em 3em rgb(0 200 0 / 30%),
+                    0 0 0 2px white,
+                    0.3em 0.3em 1em rgb(200 0 0 / 60%);
+                color: white;
+            }
 
             img {
                 width: 200px;
@@ -63,6 +40,20 @@
                 object-fit: cover;
                 border-radius: 50%;
             }
+        }
+    }
+}
+
+
+@include for-mobile-layout {
+    .skills-page-two {
+        img {
+            width: 25rem;
+        }
+
+        .skills-cards {
+            flex-direction: column;
+
         }
     }
 }
