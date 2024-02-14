@@ -2,20 +2,20 @@ export function SkillsPageTwo() {
     return (
         <section className="skills-page-two">
             <div className="flex justify-center" >
-                <img src="/public/img/My-Tech-Logo.png" />
+                <img src="/img/My-Tech-Logo.png" />
             </div>
             <section className="skills-cards flex align-center">
                 <div className="card-one flex column align-center">
-                    <img src="/public/img/front-end-developer.png" />
-                    JavaScript | HTML | CSS |
+                    <img src="/img/front-end-developer.png" />
+                    JavaScript | HTML | CSS | React | Vue | Angular
                 </div>
                 <div className="card-two flex column align-center">
-                    <img src="/public/img/back-end-developer.png" />
+                    <img src="/img/back-end-developer.png" />
                     Text
                 </div>
                 <div className="card-three flex column align-center">
-                    <img src="/public/img/data.png" />
-                    Text
+                    <img src="/img/Data.png" />
+                    MongoDB | JSON
                 </div>
             </section>
         </section>
