@@ -5,7 +5,7 @@ export function SkillsOnMobile() {
 
     return (
         <section className="skills-page-mobile flex column hidden align-center justify-center">
-            <ChartOneMobile />
+            {/* <ChartOneMobile /> */}
             {/* <ChartTwo /> */}
         </section>
     );
