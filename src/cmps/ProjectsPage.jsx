@@ -22,6 +22,22 @@ export function ProjectsPage() {
                 </div>
 
                 <div className="project-card-two flex column">
+                    <img src="/img/My-Resume.png" />
+                    <div className="project-text flex column ">
+                        <h1 className="underline bold">My-Resume</h1>
+                        <div className="fs14">TEXTY. <br /><span className="underline bold fs16">FROND-END APP</span>
+                        </div>
+                        <div className="bold">
+                            <span> - </span>
+                            <span onClick={() => window.open('https://github.com/NoyLeibo/NoyResume')} className="underline pointer">Open Git</span>
+                            <span> - </span>
+                            <span onClick={() => window.open('https://noyleibo.com/')} className="underline pointer">Open App</span>
+                            <span> - </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project-card-three flex column">
                     <img src="/img/Meme-Magic.png" />
                     <div className="project-text flex column ">
                         <h1 className="underline bold">Meme-Magic</h1>
@@ -35,10 +51,7 @@ export function ProjectsPage() {
                             <span> - </span>
                         </div>
                     </div>
-                </div>
-
-                <div className="project-card-three flex column"></div>
-                {/* <div className="project-card-four"></div> */}
+                </div>                {/* <div className="project-card-four"></div> */}
             </div>
         </section>
     )

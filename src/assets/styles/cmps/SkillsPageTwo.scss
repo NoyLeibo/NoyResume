@@ -17,7 +17,8 @@
         .card-one,
         .card-two,
         .card-three {
-            margin-top: rem(30px);
+            margin-top: rem(15px);
+            margin-bottom: rem(15px);
             width: rem(400px);
             height: rem(400px);
             background-color: SlateGrey;
@@ -25,6 +26,11 @@
             border-radius: 20px;
             justify-content: space-between;
             cursor: pointer;
+
+            @include for-mobile-layout {
+                width: 90vw;
+                height: 90vw;
+            }
 
             &:hover,
             :hover {
