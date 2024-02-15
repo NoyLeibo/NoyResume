@@ -5,6 +5,7 @@ import { AppHeader } from "./cmps/AppHeader";
 import { AboutPage } from "./cmps/AboutPage";
 import { SkillsPage } from "./cmps/SkillsPage";
 import { SkillsPageTwo } from "./cmps/SkillsPageTwo";
+import { ProjectsPage } from "./cmps/ProjectsPage.jsx";
 
 export function RootCmp() {
     // const [currentPage, setCurrentPage] = useState("welcome")
@@ -26,6 +27,7 @@ export function RootCmp() {
             <AboutPage />
             <SkillsPage />
             <SkillsPageTwo />
+            <ProjectsPage />
             {/* {currentPage === "welcome" && <WelcomePage />} */}
             {/* {currentPage === "about" && <AboutPage />} */}
         </main>

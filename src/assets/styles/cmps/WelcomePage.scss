@@ -51,6 +51,7 @@
             color: $clGreenTxt;
             border: 3px solid $clGreenTxt;
             cursor: pointer;
+            font-size: 28px;
 
             @include hover-supported {
                 background-color: transparent;
@@ -63,6 +64,13 @@
         @include for-mobile-layout {
             width: rem(120px);
             height: rem(70px);
+
+            &:hover {
+                background-color: $clGreenTxt;
+                color: black;
+                font-size: 24px;
+
+            }
         }
     }
 

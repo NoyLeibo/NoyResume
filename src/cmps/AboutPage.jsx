@@ -11,7 +11,7 @@ export function AboutPage() {
 
 
     return (
-        <section className="about-page flex row align-center">
+        <section className="about-page divider flex row align-center">
             <div className='fs22 about-details flex column'>
                 {Letters.map((letter, index) =>
                     <MovingComponent

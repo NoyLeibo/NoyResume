@@ -23,7 +23,7 @@ export function HeaderWithoutSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
         <header className="flex">
             <div className="bold">NOY<span className="greentxt">LEIBOVICH.</span></div>
             <ul className="flex row">
-                <li className='underline' style={{ color: "crimson" }}>Home</li>
+                <li className='underline bold'>Home</li>
                 <li onClick={() => { window.scrollTo({ top: 760, behavior: 'smooth' }) }}>About</li>
                 <li onClick={() => { window.scrollTo({ top: 1525, behavior: 'smooth' }) }}>Skills</li>
                 <li>Projects</li>

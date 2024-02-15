@@ -16,7 +16,7 @@ export function SkillsPage() {
 
     return (
         // <section>
-        <section className='skills-page'>
+        <section className='skills-page divider'>
             <img className="my-skills-logo" src="/img/my-skills-logo.png" />
             <section className="skills">
                 {skills.map((skill, index) => (
