@@ -14,7 +14,7 @@ export function RootCmp() {
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolledDown(window.scrollY > 0)
-            // console.log(window.scrollY);
+            console.log(window.scrollY);
         }
         window.addEventListener('scroll', handleScroll)
         return () => window.removeEventListener('scroll', handleScroll)

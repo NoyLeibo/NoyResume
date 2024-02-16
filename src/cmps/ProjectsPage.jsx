@@ -51,7 +51,9 @@ export function ProjectsPage() {
                             <span> - </span>
                         </div>
                     </div>
-                </div>                {/* <div className="project-card-four"></div> */}
+                </div>
+
+                {/* <div className="project-card-four"></div> */}
             </div>
         </section>
     )
