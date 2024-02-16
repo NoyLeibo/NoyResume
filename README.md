@@ -15,3 +15,12 @@
 
 **5. Projects:** Showcase of my projects, detailing the challenges I faced, the solutions I implemented, and the outcomes achieved.
 
+
+# **Built With**
+
+**React**: Utilized for its efficiency in building user interfaces and its component-based architecture.
+
+**(Sass):** Chosen for its powerful features that simplify CSS coding, such as variables, nested rules, and mixins.
+
+**Additional Libraries:** List any other libraries or frameworks used in the project, specifying their role and contribution.
+
