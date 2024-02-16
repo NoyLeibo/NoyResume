@@ -25,7 +25,8 @@ export function ProjectsPage() {
                     <img src="/img/My-Resume.png" />
                     <div className="project-text flex column ">
                         <h1 className="underline bold">My-Resume</h1>
-                        <div className="fs14">TEXTY. <br /><span className="underline bold fs16">FROND-END APP</span>
+                        <div className="fs14">
+                            Visit my responsive portfolio at <span onClick={() => window.open('https://noyleibo.com/')} className="underline pointer">Click Me!</span> , crafted with React and SCSS, highlighting my software development journey and passion.<br /> A gateway for potential employers to explore my projects and connect with me for opportunities.<br /><span className="underline bold fs16">FROND-END APP</span>
                         </div>
                         <div className="bold">
                             <span> - </span>
