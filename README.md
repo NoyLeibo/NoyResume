@@ -44,7 +44,7 @@ I am currently seeking new opportunities to bring my expertise to a dynamic team
 
 # **Contact**
 
-Noy Leibovich -Noyleibo70@gmail.com
+Noy Leibovich - Noyleibo70@gmail.com
 
 Project Link: https://noyleibo.com/
 
