@@ -79,3 +79,9 @@
         padding: 20px;
     }
 }
+
+@include for-mobile-layout {
+    .index-module_type__E-SaG {
+        font-size: rem(20px) !important; // כדי שלא יהיה את הקפיצה למטה של ההקלדה הנמחקת במובייל
+    }
+}
