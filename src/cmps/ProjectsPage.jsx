@@ -26,13 +26,13 @@ export function ProjectsPage() {
                     <div className="project-text flex column ">
                         <h1 className="underline bold">My-Resume</h1>
                         <div className="fs14">
-                            Visit my responsive portfolio at <span onClick={() => window.open('https://noyleibo.com/')} className="underline pointer">Click Me!</span> , crafted with React and SCSS, highlighting my software development journey and passion.<br /> A gateway for potential employers to explore my projects and connect with me for opportunities.<br /><span className="underline bold fs16">FROND-END APP</span>
+                            Visit my responsive portfolio at <span onClick={() => alert("You're already in!")} className="underline pointer">Click Me!</span> , crafted with React and SCSS, highlighting my software development journey and passion.<br /> A gateway for potential employers to explore my projects and connect with me for opportunities.<br /><span className="underline bold fs16">FROND-END APP</span>
                         </div>
                         <div className="bold">
                             <span> - </span>
                             <span onClick={() => window.open('https://github.com/NoyLeibo/NoyResume')} className="underline pointer">Open Git</span>
                             <span> - </span>
-                            <span onClick={() => window.open('https://noyleibo.com/')} className="underline pointer">Open App</span>
+                            <span onClick={() => alert('This is the app')} className="underline pointer">Open App</span>
                             <span> - </span>
                         </div>
                     </div>
