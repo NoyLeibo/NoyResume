@@ -54,7 +54,21 @@ export function ProjectsPage() {
                     </div>
                 </div>
 
-                {/* <div className="project-card-four"></div> */}
+                <div className="project-card-four flex column">
+                    <img src="/img/InstaStory.png" />
+                    <div className="project-text flex column ">
+                        <h1 className="underline bold">InstaStory</h1>
+                        <div className="fs14">INSTAGRAM PROJECT <br /><span className="underline bold fs16">FULL-STACK APP</span>
+                        </div>
+                        <div className="bold">
+                            <span> - </span>
+                            <span className="underline pointer">Open Git</span>
+                            <span> - </span>
+                            <span className="underline pointer">Open App</span>
+                            <span> - </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
