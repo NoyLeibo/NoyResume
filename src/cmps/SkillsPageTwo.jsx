@@ -7,11 +7,11 @@ export function SkillsPageTwo() {
             <section className="skills-cards flex align-center divider">
                 <div className="card-one flex column align-center">
                     <img src="/img/front-end-developer.png" />
-                    JavaScript | HTML | CSS | React | Vue | Angular | JQuery
+                    JavaScript | HTML | CSS | React | Vue | Angular | JQuery | Python
                 </div>
                 <div className="card-two flex column align-center">
                     <img src="/img/back-end-developer.png" />
-                    JavaScript | Python | API | Sockets
+                    JavaScript | API | Sockets
                 </div>
                 <div className="card-three flex column align-center">
                     <img src="/img/Data.png" />
