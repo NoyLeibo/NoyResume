@@ -5,7 +5,7 @@
     justify-content: space-evenly;
 
     @include for-mobile-layout {
-        height: 350vh;
+        height: auto;
     }
 
     .project-cards {
