@@ -14,6 +14,9 @@ export function HeaderWithoutSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
             case 'Skills':
                 window.scrollTo({ top: 1200, behavior: 'smooth' })
                 break;
+            case 'Projects':
+                window.scrollTo({ top: 3400, behavior: 'smooth' })
+                break;
             default:
                 break;
         }
@@ -26,8 +29,8 @@ export function HeaderWithoutSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                 <li className='underline bold'>Home</li>
                 <li onClick={() => { window.scrollTo({ top: 760, behavior: 'smooth' }) }}>About</li>
                 <li onClick={() => { window.scrollTo({ top: 1525, behavior: 'smooth' }) }}>Skills</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+                <li onClick={() => { window.scrollTo({ top: 2587, behavior: 'smooth' }) }}>Projects</li>
+                {/* <li>Contact me</li> */}
             </ul>
             <Hamburger toggled={isOpenMobileNav} toggle={setIsOpenMobileNav} color={isOpenMobileNav ? "white" : '#08ff98fb'} />
             {isOpenMobileNav && (
@@ -36,8 +39,8 @@ export function HeaderWithoutSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                         <li onClick={() => onNavigateMobile('Home')}>Home</li>
                         <li onClick={() => onNavigateMobile('About')}>About</li>
                         <li onClick={() => onNavigateMobile('Skills')}>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact me</li>
+                        <li onClick={() => onNavigateMobile('Projects')}>Projects</li>
+                        {/* <li>Contact me</li> */}
                     </ul>
                 </div>
             )}

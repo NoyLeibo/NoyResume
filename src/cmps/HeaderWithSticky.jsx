@@ -41,7 +41,7 @@ export function HeaderWithSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                 <li className={scrollY >= 300 && scrollY < 1000 ? 'underline bold' : ''} onClick={() => { window.scrollTo({ top: 684, behavior: 'smooth' }) }}>About</li>
                 <li className={scrollY >= 1000 && scrollY < 2300 ? 'underline bold' : ''} onClick={() => { window.scrollTo({ top: 1360, behavior: 'smooth' }) }}>Skills</li>
                 <li className={scrollY >= 2300 && scrollY < 4000 ? 'underline bold' : ''} onClick={() => { window.scrollTo({ top: 2587, behavior: 'smooth' }) }}>Projects</li>
-                <li>Contact me</li>
+                {/* <li>Contact me</li> */}
             </ul>
             <Hamburger toggled={isOpenMobileNav} toggle={setIsOpenMobileNav} color={isOpenMobileNav ? "white" : 'black'} />
             {isOpenMobileNav && (
@@ -51,7 +51,7 @@ export function HeaderWithSticky({ isOpenMobileNav, setIsOpenMobileNav }) {
                         <li onClick={() => onNavigateMobile('About')}>About</li>
                         <li onClick={() => onNavigateMobile('Skills')}>Skills</li>
                         <li onClick={() => onNavigateMobile('Projects')}>Projects</li>
-                        <li>Contact me</li>
+                        {/* <li>Contact me</li> */}
                     </ul>
                 </div>
             )}
