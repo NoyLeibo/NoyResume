@@ -14,7 +14,7 @@ export function WelcomePage() {
                         repeat={Infinity}
                     />
                 </div>
-                <button className="hireme-btn fs24">Contact me</button>
+                {/* <button className="hireme-btn fs24">Contact me</button> */}
             </div>
             <img src="https://res.cloudinary.com/dysh9q6ir/image/upload/v1706788350/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_ngeib7.png" className="avatar" />
         </section>
