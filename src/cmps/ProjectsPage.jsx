@@ -35,7 +35,7 @@ export function ProjectsPage() {
                             <span> - </span>
                             <span onClick={() => window.open('https://github.com/NoyLeibo/InstaStory-Backend')} className="underline pointer" >Open Git Back-End</span>
                             <span> - </span>
-                            <span onClick={() => window.open('https://instastory.onrender.com/')} className="underline pointer">Open App</span>
+                            <span onClick={() => window.open('https://www.myinstastory.com/')} className="underline pointer">Open App</span>
                             <span> - </span>
                         </div>
                     </div>
