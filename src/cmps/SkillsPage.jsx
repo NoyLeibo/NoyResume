@@ -7,6 +7,7 @@ export function SkillsPage() {
 
     const skills = [
         { name: 'JavaScript', level: 100, icon: '/img/js-icon.png' },
+        { name: 'TypeScript', level: 100, icon: '/img/Typescript.png' },
         { name: 'HTML&CSS', level: 100, icon: '/img/html5-css3-icon.png' },
         { name: 'React', level: 100, icon: '/img/React-icon.png' },
         { name: 'Angular', level: 100, icon: '/img/angular-icon.png' },
